@@ -1,8 +1,7 @@
 const sqlite3 = require("sqlite3");
 
 class Context {
-  constructor(dbFilePath) {
-    //سازنده ی کلاس
+  constructor(dbFilePath) {    
     this.db = new sqlite3.Database(dbFilePath, err => {
       if (!err) console.log("Connected to Database");
       else console.log("Could not connected to database", err);

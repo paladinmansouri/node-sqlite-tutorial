@@ -37,7 +37,7 @@ module.exports.fillData = () => {
           })
         );
       })
-      .then(() => resolve("Fill Data is successed"))
+      .then(() => resolve("Fill Data is success"))
       .catch(err => {
         reject(err);
       });
